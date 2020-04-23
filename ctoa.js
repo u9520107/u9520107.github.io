@@ -70,7 +70,9 @@
     for (let i = str.length - 1; i > -1; i--) {
       const current = cCharToNum(str[i]);
       if (current !== null) {
-        if (current >= 10000) {
+        if (current === 0) {
+          // ignore
+        } else if (current >= 10000) {
           register += lastNumber * multiplier;
           lastNumber = 0;
           multiplier = 1;
@@ -121,7 +123,6 @@
   inputEl.addEventListener("change", (e) => {
     const value = e.currentTarget.value;
     const result = ctoa(value);
-    console.log("@@", value, result);
     outputEl.innerHTML = result;
   });
 })();
