@@ -7,6 +7,7 @@
       case "二":
       case "貳":
       case "贰":
+      case "貮":
         return 2;
       case "三":
       case "參":
