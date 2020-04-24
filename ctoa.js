@@ -10,6 +10,7 @@
         return 2;
       case "三":
       case "參":
+      case "参":
       case "叁":
         return 3;
       case "四":
