@@ -5,6 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "yarn webpack-dev-server"
+  },
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "prop-types": "^15.7.2",

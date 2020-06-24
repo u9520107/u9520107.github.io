@@ -12,5 +12,8 @@
   ],
   "devDependencies": {
     "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "cnc": "yarn workspace chinese-number-conversion"
   }
 }

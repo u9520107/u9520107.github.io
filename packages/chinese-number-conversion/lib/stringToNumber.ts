@@ -1,4 +1,4 @@
-import { charactorToNumber } from "./charactorToNumber";
+import { charactorToNumber } from './charactorToNumber';
 
 export function stringToNumber(str: string): number | null {
   let result = 0;
