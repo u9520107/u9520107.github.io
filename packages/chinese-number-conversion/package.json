@@ -1,0 +1,31 @@
+{
+  "name": "chinese-number-conversion",
+  "version": "1.0.0",
+  "description": "Chinese number conversion tools",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recoil": "^0.0.10",
+    "styled-components": "5.1.0",
+    "styled-reset": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.39",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.0",
+    "dynamic-cdn-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "module-to-cdn": "^3.1.5",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
