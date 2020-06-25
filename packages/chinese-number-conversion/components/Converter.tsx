@@ -1,6 +1,9 @@
-import React from 'react';
-import { TextField } from '@material-ui/core';
+import React, { FC } from 'react';
 import styled from 'styled-components';
+import { RecoilRoot } from 'recoil';
+import { NumberInput } from './NumberInput';
+import { UseComma } from './UseComma';
+import { ResultDisplay } from './ResultDisplay';
 
 const FlexContainer = styled.div`
   box-sizing: border-box;
@@ -24,47 +27,38 @@ const Header = styled.header`
   border-bottom: solid 1px lightgray;
 `;
 
-const InputContainer = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+const HistoryHeader = styled.div`
+  box-sizing: border-box;
   flex-grow: 0;
-  height: 50px;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
-function NumberInput() {
-  return (
-    <InputContainer>
-      <TextField
-        id="number-input"
-        label="Chinese Number Input"
-        variant="standard"
-        fullWidth
-      />
-    </InputContainer>
-  );
-}
+const HistoryContainer = styled.div``;
 
-function ResultDisplay() {
+const History: FC = () => {
   return (
-    <InputContainer>
-      <TextField
-        fullWidth
-        label="Result"
-        inputProps={{ readOnly: true }}
-        value="123,556"
-      />
-    </InputContainer>
+    <>
+      <HistoryHeader>History</HistoryHeader>
+      <HistoryContainer>To be implemented</HistoryContainer>
+    </>
   );
-}
+};
 
 export function Converter() {
   return (
-    <FlexContainer>
-      <Header>Chinese Number Conversion</Header>
-      <NumberInput />
-      <ResultDisplay />
-    </FlexContainer>
+    <RecoilRoot>
+      <FlexContainer>
+        <Header>Chinese Number Conversion</Header>
+        <NumberInput />
+        <UseComma />
+        <ResultDisplay />
+        <History />
+      </FlexContainer>
+    </RecoilRoot>
   );
 }
